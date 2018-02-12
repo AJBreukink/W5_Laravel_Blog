@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  $articles  = [
+    "About a cat",
+    "Somethings is fishy",
+    "Cats hate dogs"
+  ];
+
+   return view('welcome', compact('articles'));
+
 });
