@@ -15,12 +15,12 @@
     </head>
     <body>
 
-       <h1> Blog posts</h1>
-<ul>
-       @foreach ($articles as $article)
+       <h1> {{ $article->title }} </h1>
 
-      <li> {{ $article->title }} </li>
-      @endforeach
-    </ul>
+
+
+      <p> {{ $article->content }} </p>
+
+
     </body>
 </html>

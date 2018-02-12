@@ -11,13 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-  $articles  = [
-    "About a cat",
-    "Somethings is fishy",
-    "Cats hate dogs"
-  ];
+Route::get('/articles', function () {
+  $articles  = DB::table('articles')->get();
 
-   return view('welcome', compact('articles'));
+   return view('articles.index', compact('articles'));
+
+});
+
+Route::get('/articles/{article}', function ($id) {
+
+  $article  = DB::table('articles')->find($id);
+
+
+
+   return view('articles.show', compact('article'));
 
 });
