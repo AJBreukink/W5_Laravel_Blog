@@ -11,22 +11,6 @@
 |
 */
 
-use App\Article;
+Route::get('/articles', 'ArticlesController@index');
 
-Route::get('/articles', function () {
-
-  $articles = Article::all();
-
-   return view('articles.index', compact('articles'));
-
-});
-
-Route::get('/articles/{article}', function ($id) {
-
-
-
-$article = Article::find($id);
-
-   return view('articles.show', compact('article'));
-
-});
+Route::get('/articles/{article}', 'ArticlesController@show');
