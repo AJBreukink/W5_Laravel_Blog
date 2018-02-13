@@ -11,8 +11,11 @@
 |
 */
 
+use App\Article;
+
 Route::get('/articles', function () {
-  $articles  = DB::table('articles')->get();
+
+  $articles = Article::all();
 
    return view('articles.index', compact('articles'));
 
@@ -20,9 +23,9 @@ Route::get('/articles', function () {
 
 Route::get('/articles/{article}', function ($id) {
 
-  $article  = DB::table('articles')->find($id);
 
 
+$article = Article::find($id);
 
    return view('articles.show', compact('article'));
 
