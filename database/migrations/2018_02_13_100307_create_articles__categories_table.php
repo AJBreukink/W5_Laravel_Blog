@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCategoriesArticlesTable extends Migration
+class CreateArticlesCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCategoriesArticlesTable extends Migration
      */
     public function up()
     {
-        Schema::create('categories-_articles', function (Blueprint $table) {
+        Schema::create('articles__categories', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateCategoriesArticlesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categories-_articles');
+        Schema::dropIfExists('articles__categories');
     }
 }
