@@ -1,3 +1,10 @@
+## CG week 5
+### MVC exercise: Rebuilding week 3 and 4's blog using Laravel
+
+backlog: https://trello.com/b/xwtTcqeO/week-5-laravel
+
+<br><br>
+<hr>
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
@@ -57,5 +64,3 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-contribute test
