@@ -9,5 +9,5 @@
 @endsection
 
 @section ('footer')
-footer
+footer test
 @endsection
