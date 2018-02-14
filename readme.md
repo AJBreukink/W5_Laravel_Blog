@@ -1,5 +1,5 @@
 ## CG week 5
-# MVC exercise: Rebuilding week 3 and 4's blog using Laravel
+### MVC exercise: Rebuilding week 3 and 4's blog using Laravel
 
 backlog: https://trello.com/b/xwtTcqeO/week-5-laravel
 
