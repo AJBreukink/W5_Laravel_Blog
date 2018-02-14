@@ -11,5 +11,9 @@ class Article extends Model
     return $query->where('deleted', 0)->latest();
   }
 
+  public function comments()
+  {
+    return $this->hasMany(Comment::class);
+  }
 
 }
