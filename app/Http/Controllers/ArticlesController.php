@@ -21,20 +21,28 @@ class ArticlesController extends Controller
     return view('articles.show', compact('article'));
   }
 
-  public function create() {
+    public function create() {
 
-  return view('admin.form');
-}
-public function store() {
-//creat a new article using request data
-$article = new Article;
-$article->title = request('title');
-$article->content = request('content');
+    return view('admin.form');
+  }
 
-// save it to the database
-$article->save();
+    public function store() {
 
-//redirect to home page
-return redirect('/');
-}
+      $this->validate(request(),[
+
+        'title' => 'required',
+        'content' => 'required'
+
+      ]);
+      //creat a new article using request data
+      $article = new Article;
+      $article->title = request('title');
+      $article->content = request('content');
+
+      //save it to the database
+      $article->save();
+
+      //redirect to home page
+      return redirect('/');
+    }
 }
