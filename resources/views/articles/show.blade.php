@@ -6,8 +6,10 @@
 
   <p> {{ $article->content }} </p>
 
+  @include ('layouts.comments')
+
 @endsection
 
 @section ('footer')
-footer
+footer test
 @endsection
