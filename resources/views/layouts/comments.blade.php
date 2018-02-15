@@ -6,6 +6,8 @@
 
       <li class="list-group-item">
 
+        <em>An anonymous reader: </em>
+
         {{$comment->content}}
 
       </li>
