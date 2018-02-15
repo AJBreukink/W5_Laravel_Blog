@@ -8,6 +8,8 @@
 
     @include ('layouts.comments')
 
+    @include ('layouts.commentform')
+
 @endsection
 
 @section ('footer')
