@@ -13,5 +13,6 @@ class Articles_Category extends Model
   public function category(){
 
     return $this->belongsTo(Category::class);
+  
   }
 }
