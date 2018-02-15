@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Article;
 
+use App\Category;
 class ArticlesController extends Controller
 {
 
@@ -23,13 +24,13 @@ class ArticlesController extends Controller
 
   public function create() {
 
-  return view('admin.form');
+  return view('admin.form', ['categories' => Category::all()]);
 }
 public function store() {
 $this->validate(request(), [
 'title'=> 'required',
 'content'=> 'required'
-  
+
 ]);
 
 //creat a new article using request data
