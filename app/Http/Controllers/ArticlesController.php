@@ -23,24 +23,8 @@ class ArticlesController extends Controller
 
     public function create() {
 
-<<<<<<< HEAD
-  return view('admin.form');
-}
-public function store() {
-$this->validate(request(), [
-'title'=> 'required',
-'content'=> 'required'
-  
-]);
-
-//creat a new article using request data
-$article = new Article;
-$article->title = request('title');
-$article->content = request('content');
-=======
     return view('admin.form');
   }
->>>>>>> Comments
 
     public function store() {
 
