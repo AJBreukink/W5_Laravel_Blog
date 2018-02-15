@@ -9,3 +9,5 @@ Route::get('/articles/{article}', 'ArticlesController@show');
 Route::get('/admin/addpost', 'ArticlesController@create');
 
 Route::post('/articles', 'ArticlesController@store');
+
+Route::post('/articles/{article}/comments', 'CommentsController@store');

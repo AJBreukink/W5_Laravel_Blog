@@ -2,9 +2,17 @@
 
 @section('content')
 
+<<<<<<< HEAD
   <h1>{{ $article->id }} {{ $article->title }} </h1>
+=======
+    <h1> {{ $article->title }} </h1>
+>>>>>>> Comments
 
-  <p> {{ $article->content }} </p>
+    <p> {{ $article->content }} </p>
+
+    @include ('layouts.comments')
+
+    @include ('layouts.commentform')
 
   @include ('layouts.comments')
 
