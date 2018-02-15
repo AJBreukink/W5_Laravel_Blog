@@ -11,9 +11,18 @@ class Article extends Model
     return $query->where('deleted', 0)->latest();
   }
 
+  // public function category(){
+  //
+  //   return $this->hasManyThrough( Articles_Category::class, Category::class);
+  //  }
+  public function articles_category(){
+
+    return $this->hasMany(Articles_Category::class);
+  }
   public function comments()
   {
     return $this->hasMany(Comment::class);
   }
+
 
 }
